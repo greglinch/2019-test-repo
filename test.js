@@ -1,57 +1,24 @@
-// this is a single-line JavaScript comment
+$(document).ready(function() {
+	// define our variables
 
-/*
-this is a multi-line JavaScript
-*/
+	// specific name (e.g. from a form)
+	var name = "Chris";
+	// valid names
+	var validNames = ["Sarah", "Solomon", "Cory"]
 
-// when the document is ready... (a.k.a. wait until the HTML has loaded)
+	// getting the name id on the page
+	var nameElement = $("#name");
 
-	// define your variables
+	// check if the submitted name is valid
+	if (nameElement.html() in validNames) {
+		// updating the name element on the page
+		nameElement.html(name);
+		// let the user know
+		alert("Congrats, " + name + "! You're on the list!");
+	} else {
+	// or it's invalid
+		// let the user know
+		alert("Sorry, " + name + " , you're not on the list.")
+	}
 
-	// custom functions
-
-		// variables
-
-	// if this condition is true...
-
-		// do something or call a function
-
-	// or else do this
-
-		// another set of instructions to follow or function to call
-
-
-
-
-
-
-
-
-
-		// step 1
-
-
-		// step 2
-
-
-		// step 3
-
-
-		// step 4
-
-
-		// step 5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
